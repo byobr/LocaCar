@@ -28,7 +28,7 @@ namespace LocaCar.Controllers
             this._autorizacaoBLL = autorizacaoBLL;
         }
 
-        //Login
+        //Rota de Login
         [HttpPost]
         [AllowAnonymous]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status200OK)]
