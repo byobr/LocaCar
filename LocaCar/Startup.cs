@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using System;
 
 namespace LocaCar
 {
@@ -50,7 +51,7 @@ namespace LocaCar
 
             services.AddDbContext<Contexto>(
             options =>
-                options.UseSqlServer(_configuration.GetSection("Config").GetSection("cs_banco").Value));
+                options.UseSqlServer(Environment.GetEnvironmentVariable("cs")));
 
             byte[] Secret = Encoding.ASCII.GetBytes(_configuration.GetSection("Config").GetSection("secret_auth").Value);
 

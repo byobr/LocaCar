@@ -14,6 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
+        "cs": "Server=locacar.database.windows.net; Database=locacar; User Id=byobr; Password=001011xdD;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
@@ -25,6 +26,16 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "cs": "Server=locacar.database.windows.net; Database=locacar; User Id=byobr; Password=001011xdD;"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
     }
   }
 }
