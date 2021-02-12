@@ -23,7 +23,7 @@ namespace LocaCar.Controllers
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status400BadRequest)]
         [HttpPost]
-        public IActionResult Add(ModelosDTO Modelo)
+        public IActionResult CadastrarModelo(ModelosDTO Modelo)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace LocaCar.Controllers
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status400BadRequest)]
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult ObterTodosModelos()
         {
             try
             {
@@ -58,7 +58,7 @@ namespace LocaCar.Controllers
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status404NotFound)]
         [HttpDelete]
-        public IActionResult Remove(int Modelo)
+        public IActionResult RemoverModelo(int Modelo)
         {
             try
             {

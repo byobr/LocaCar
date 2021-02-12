@@ -3,19 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", ".\Entidades\Entidades.csproj", "{EF60BA27-CD68-42B1-88BA-35C6AF6342B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{EF60BA27-CD68-42B1-88BA-35C6AF6342B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositorios", ".\Repositorios\Repositorios.csproj", "{2A8CDE53-AF51-4845-B250-01A41ECDD852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositorios", "Repositorios\Repositorios.csproj", "{2A8CDE53-AF51-4845-B250-01A41ECDD852}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fronteiras", ".\Fronteiras\Fronteiras.csproj", "{878BB715-A3EF-4F5F-8179-04CD11BBD240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fronteiras", "Fronteiras\Fronteiras.csproj", "{878BB715-A3EF-4F5F-8179-04CD11BBD240}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Util", ".\Util\Util.csproj", "{B4B97940-209B-49B9-90DD-E7BA39F0A02B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Util", "Util\Util.csproj", "{B4B97940-209B-49B9-90DD-E7BA39F0A02B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocaCar", ".\LocaCar\LocaCar.csproj", "{A29EBDA5-2AD3-4102-922B-452FEB915A0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocaCar", "LocaCar\LocaCar.csproj", "{A29EBDA5-2AD3-4102-922B-452FEB915A0D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testes", ".\Testes\Testes.csproj", "{C35B34B6-C415-4360-BE0A-49DE7F515CCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{ABF6A5C3-BC65-4E54-87F3-C538ED076351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", ".\BLL\BLL.csproj", "{ABF6A5C3-BC65-4E54-87F3-C538ED076351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestesUnitarios", "TestesUnitarios\TestesUnitarios.csproj", "{1D445829-6028-47BD-863C-5453BDEAA7B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B836B341-86BA-48B5-85A8-761E96CA50F5}"
+	ProjectSection(SolutionItems) = preProject
+		CodeCoverage.runsettings = CodeCoverage.runsettings
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +48,14 @@ Global
 		{A29EBDA5-2AD3-4102-922B-452FEB915A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A29EBDA5-2AD3-4102-922B-452FEB915A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29EBDA5-2AD3-4102-922B-452FEB915A0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C35B34B6-C415-4360-BE0A-49DE7F515CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C35B34B6-C415-4360-BE0A-49DE7F515CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C35B34B6-C415-4360-BE0A-49DE7F515CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C35B34B6-C415-4360-BE0A-49DE7F515CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ABF6A5C3-BC65-4E54-87F3-C538ED076351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABF6A5C3-BC65-4E54-87F3-C538ED076351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF6A5C3-BC65-4E54-87F3-C538ED076351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF6A5C3-BC65-4E54-87F3-C538ED076351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D445829-6028-47BD-863C-5453BDEAA7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D445829-6028-47BD-863C-5453BDEAA7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D445829-6028-47BD-863C-5453BDEAA7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D445829-6028-47BD-863C-5453BDEAA7B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
