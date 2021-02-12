@@ -29,7 +29,7 @@ jobs:
     - name: Build and push image to ACR
       id: build-image
       run: |
-        docker build "$GITHUB_WORKSPACE/LocaCar" -f  "LocaCar/Dockerfile" -t locacarwebapi.azurecr.io/locacar-img:${{ github.sha }}
+        docker build "$GITHUB_WORKSPACE" -f  "Dockerfile" -t locacarwebapi.azurecr.io/locacar-img:${{ github.sha }}
         docker push locacarwebapi.azurecr.io/locacar-img:${{ github.sha }}
       
     - name: Set Web App ACR authentication
