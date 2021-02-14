@@ -11,7 +11,6 @@ using Util;
 
 namespace LocaCar.Controllers
 {
-    [Authorize(Roles = "Operador")]
     [Route("api/[controller]")]
     [ApiController]
     public class CarrosController : ControllerBase
@@ -26,6 +25,7 @@ namespace LocaCar.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status400BadRequest)]
+        [Authorize(Roles = "Operador")]
         public IActionResult CadastrarCarro(CarrosDTO Marca)
         {
             try
@@ -43,6 +43,7 @@ namespace LocaCar.Controllers
         [HttpGet]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status400BadRequest)]
+        [AllowAnonymous]
         public IActionResult ObterTodosCarros()
         {
             try
@@ -61,6 +62,7 @@ namespace LocaCar.Controllers
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(SaidaAPI), StatusCodes.Status404NotFound)]
         [HttpDelete]
+        [Authorize(Roles = "Operador")]
         public IActionResult RemoverMarcas(int Carro)
         {
             try
