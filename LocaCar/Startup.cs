@@ -117,7 +117,12 @@ namespace LocaCar
 
             app.UseHttpsRedirection();
 
+            app.UseCors(option => option.AllowAnyOrigin()
+                                        .AllowAnyHeader()
+                                        .AllowAnyMethod());
+
             app.UseRouting();
+           
 
             app.UseAuthentication();
 
