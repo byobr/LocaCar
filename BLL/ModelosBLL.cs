@@ -35,7 +35,7 @@ namespace BLL
 
             foreach (Modelos Modelo in this._modelosRepositorio.GetAll())
             {
-                Retorno.Add(new ModelosDTO { MarcaId = Modelo.Marca.Id, NomeModelo = Modelo.Modelo });
+                Retorno.Add(new ModelosDTO { MarcaId = Modelo.Marca.Id, NomeModelo = Modelo.Modelo, ModeloId = Modelo.Id });
             }
 
             return Retorno;

@@ -7,6 +7,7 @@ namespace Fronteiras.DTOs
     public class ModelosDTO
     {
         public virtual int MarcaId { get; set; }
+        public virtual int ModeloId { get; set; }
         public virtual string NomeModelo { get; set; }
     }
 }
