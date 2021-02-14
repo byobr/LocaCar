@@ -46,7 +46,7 @@ namespace Repositorios
         {
             try
             {
-                return _contexto.Alugueis.Include(c=> c.Cliente).Include(c => c.Carro.Modelo).Where(f => f.Cliente.Id == Cliente).ToList();
+                return _contexto.Alugueis.Include(c=> c.Cliente).Include(c => c.Carro.Modelo).Include(m => m.Carro.Marca).Where(f => f.Cliente.Id == Cliente).ToList();
             }
             catch (Exception e)
             {
