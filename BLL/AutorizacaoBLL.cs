@@ -80,6 +80,7 @@ namespace BLL
                 Retorno.Perfil = "Operador";
                 Retorno.Token = Token.Item1;
                 Retorno.Expiracao = Token.Item2;
+                Retorno.IdUsuario = Operador.Id;
             }
             else
             {
@@ -102,6 +103,7 @@ namespace BLL
                 Retorno.Perfil = "Cliente";
                 Retorno.Token = Token.Item1;
                 Retorno.Expiracao = Token.Item2;
+                Retorno.IdUsuario = Cliente.Id;
             }
 
             return Retorno;
